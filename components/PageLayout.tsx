@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { Navbar } from "./Navbar";
+import Footer from "./Footer";
 
 export default function PageLayout({ children, ...customMeta }) {
   const router = useRouter();
@@ -39,10 +40,9 @@ export default function PageLayout({ children, ...customMeta }) {
         {/* <meta name="twitter:image" content={meta.image} /> */}
       </Head>
       <main className="dark:bg-gray-800 w-full">
-        {/* navbar */}
         <Navbar />
         <div>{children}</div>
-        {/* footer */}
+        <Footer />
       </main>
     </div>
   );
