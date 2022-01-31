@@ -5,7 +5,7 @@ const getLatestRepos = async (data,token)=>{
         const username = data.githubUsername;
         if(token){
             const res = await axios.get(
-                `https://api.github.com/search/repositories?q=user:${username}+sort:author-date-asc`,
+                `https://api.github.com/search/repositories?q=user:${username}+sort:updated-desc`,
                 {
                     headers:{
                         Authorization:`token ${token}`
@@ -14,6 +14,16 @@ const getLatestRepos = async (data,token)=>{
             );
             var repos = res.data.items;
             var latestSix = repos.splice(0,6);
+            return latestSix;
+        }
+        else{
+            const res = await axios.get(
+                `https://api.github.com/search/repositories?q=user:${username}+sort:updated-desc`
+            );
+            let repos = res.data.items;
+            repos.forEach((repo)=>console.log(repo.created_at));
+            let latestSix = repos.splice(0,6);
+            // console.log(latestSix[5].created_at);
             return latestSix;
         }
     }catch(err){
