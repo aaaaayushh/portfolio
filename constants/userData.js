@@ -9,4 +9,6 @@ export const userData = {
   },
   githubUsername: "aaaaayushh",
   projects: [],
+  phone: "+91 8910587707",
+  email: "aayushshah1142@gmail.com",
 };
