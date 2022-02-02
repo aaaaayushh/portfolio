@@ -11,4 +11,10 @@ export const userData = {
   projects: [],
   phone: "+91 8910587707",
   email: "aayushshah1142@gmail.com",
+  about: {
+    title:
+      "I'm a third-year Computer Science student and an avid software developer, eager to learn something new everyday",
+    currentProject: "Get-Better",
+    currentProjectUrl: "",
+  },
 };
