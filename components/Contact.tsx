@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { GrLinkedin } from "react-icons/gr";
+import { FiClipboard } from "react-icons/fi";
 import { userData } from "../constants/userData";
 
 export default function Contact() {
@@ -11,7 +12,7 @@ export default function Contact() {
           Contact
         </h1>
       </div>
-      <div className="relative z-10 bg-[#02044A] rounded-md shadow-md p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
+      <div className="relative z-10 bg-[#02044A] rounded-md shadow-md p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-2">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
             <header>
@@ -24,7 +25,7 @@ export default function Contact() {
               </p>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
-              <div className="flex flex-row items-center space-x-6 rounded-md border hover:border hover:border-blue-500 p-4 border-[#02044A]">
+              <div className="flex flex-row items-center justify-between space-x-6 rounded-md border hover:border hover:border-blue-500 p-4 border-[#02044A]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -41,6 +42,12 @@ export default function Contact() {
                 <p className="text-gray-50 font-light text-sm">
                   {userData.phone}
                 </p>
+                <FiClipboard
+                  className="text-white cursor-pointer self-end"
+                  onClick={() => {
+                    navigator.clipboard.writeText(userData.phone);
+                  }}
+                />
               </div>
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
                 <svg
@@ -56,6 +63,12 @@ export default function Contact() {
                 <p className="text-gray-50 font-light text-sm">
                   {userData.email}
                 </p>
+                <FiClipboard
+                  className="text-white cursor-pointer"
+                  onClick={() => {
+                    navigator.clipboard.writeText(userData.email);
+                  }}
+                />
               </div>
             </div>
             <div className="social-icons flex flex-row space-x-8">

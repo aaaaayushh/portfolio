@@ -17,4 +17,21 @@ export const userData = {
     currentProject: "Get-Better",
     currentProjectUrl: "",
   },
+  projects: [
+    {
+      title: "Get-Better",
+    },
+  ],
+  experience: [
+    {
+      title: "abc",
+      year: "2020",
+      desc: "Lorem Ipsum dolor",
+    },
+    {
+      title: "abc",
+      year: "2020",
+      desc: "Lorem Ipsum dolor",
+    },
+  ],
 };
