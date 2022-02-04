@@ -51,7 +51,7 @@ export default function about() {
                   Internship Opportunities
                 </h1>
                 <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                  I&apos;m looking for a software development internship
+                  I&apos;m looking for a software development internships
                   currently. If you see me as a good fit, please reach out.
                 </p>
               </div>

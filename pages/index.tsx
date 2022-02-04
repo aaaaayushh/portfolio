@@ -5,7 +5,6 @@ import Projects from "../components/Projects";
 import { userData } from "../constants/userData";
 import getLatestRepos from "../utils/getLatestRepos";
 export default function Home({ repositories }) {
-  console.log(repositories);
   return (
     <PageLayout>
       <Hero />
@@ -18,7 +17,6 @@ export default function Home({ repositories }) {
 export const getServerSideProps = async () => {
   let token = process.env.GITHUB_AUTH_TOKEN;
   const repositories = await getLatestRepos(userData, token);
-  console.log(repositories.length);
   return {
     props: {
       repositories,

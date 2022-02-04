@@ -1,10 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+import { send } from "emailjs-com";
 import { FaGithub } from "react-icons/fa";
 import { GrLinkedin } from "react-icons/gr";
 import { FiClipboard } from "react-icons/fi";
 import { userData } from "../constants/userData";
+import { showErrorToast, showSuccessToast } from "../lib/toast";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("here");
+    let templateParams = {
+      from_name: `${name}(${email})`,
+      to_name: "Aayush",
+      message: message,
+    };
+    console.log(templateParams);
+    console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
+    send(
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      templateParams,
+      process.env.NEXT_PUBLIC_USER_ID
+    )
+      .then((res) => {
+        console.log(res);
+        if (res.status === 200) {
+          showSuccessToast("Message sent!");
+          setName("");
+          setMessage("");
+          setEmail("");
+        } else {
+          showErrorToast("An unexpected error occured");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
@@ -106,7 +142,10 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="form rounded-lg bg-white p-4 flex flex-col">
+          <form
+            className="form rounded-lg bg-white p-4 flex flex-col"
+            onSubmit={(e) => handleSubmit(e)}
+          >
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               {" "}
               Name
@@ -115,6 +154,8 @@ export default function Contact() {
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
               Email
@@ -123,6 +164,8 @@ export default function Contact() {
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <label
               htmlFor="message"
@@ -134,6 +177,8 @@ export default function Contact() {
               rows={4}
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <button
               type="submit"
