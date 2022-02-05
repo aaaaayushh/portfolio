@@ -12,14 +12,11 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("here");
     let templateParams = {
       from_name: `${name}(${email})`,
       to_name: "Aayush",
       message: message,
     };
-    console.log(templateParams);
-    console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
     send(
       process.env.NEXT_PUBLIC_SERVICE_ID,
       process.env.NEXT_PUBLIC_TEMPLATE_ID,
@@ -27,7 +24,6 @@ export default function Contact() {
       process.env.NEXT_PUBLIC_USER_ID
     )
       .then((res) => {
-        console.log(res);
         if (res.status === 200) {
           showSuccessToast("Message sent!");
           setName("");

@@ -6,10 +6,10 @@ interface CodeProps {
 }
 export const LatestCode: React.FC<CodeProps> = ({ repositories }) => {
   //   const [repos, setRepos] = useState<Array<any>>([]);
-  console.log(repositories);
   const [repos, setRepos] = useState([]);
   useEffect(() => {
     setRepos(repositories);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">

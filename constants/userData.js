@@ -25,6 +25,7 @@ export const userData = {
     },
     {
       title: "Get-Better",
+      imgUrl: "/projects/get-better.png",
     },
     {
       title: "Mars Rover Manipal",

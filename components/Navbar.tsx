@@ -7,7 +7,6 @@ import { FaGithub } from "react-icons/fa";
 
 export const Navbar: React.FC = () => {
   const router = useRouter();
-  console.log(router.asPath);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
