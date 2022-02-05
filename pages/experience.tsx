@@ -5,8 +5,8 @@ import { userData } from "../constants/userData";
 export default function experience() {
   return (
     <PageLayout>
-      <section className="bg-white dark:bg-gray-800 dark:text-gray-200">
-        <div className="max-w-6xl mx-auto h-48">
+      <section className="bg-white dark:bg-gray-800 ">
+        <div className="max-w-6xl mx-auto h-48 dark:text-gray-200">
           <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
             Experience
           </h1>
@@ -42,7 +42,7 @@ export default function experience() {
 function ExperienceCard({ title, desc, year, company, companyLink }) {
   return (
     <div className="relative border p-4 rounded-md shadow-xl bg-white dark:bg-gray:800 z-10 mx-4">
-      <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-700 font-bold dark:text-gray-800">
+      <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-700 font-bold dark:text-gray-400">
         {year}
       </h1>
       <h1 className="font-semibold text-xl">{title}</h1>
@@ -51,7 +51,7 @@ function ExperienceCard({ title, desc, year, company, companyLink }) {
           {company}
         </a>
       )}
-      <p className="text-gray-600 dark:text-gray-400 my-2">{desc}</p>
+      <p className="text-gray-600 my-2">{desc}</p>
     </div>
   );
 }

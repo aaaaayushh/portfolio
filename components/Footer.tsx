@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 import { userData } from "../constants/userData";
 
 export default function Footer() {
@@ -23,6 +24,12 @@ export default function Footer() {
             </p>
           </div>
           <div className="space-x-4 flex flex-row items-center">
+            <a
+              href={userData.socialLinks.github}
+              className="text-base font-normal text-gray-600 dark:text-gray-300 scale-150"
+            >
+              <FaGithub />
+            </a>
             <a
               href={userData.socialLinks.instagram}
               className="text-base font-normal text-gray-600 dark:text-gray-300"
