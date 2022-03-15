@@ -15,8 +15,45 @@ export default function Home({ repositories }) {
 }
 
 export const getServerSideProps = async () => {
-  let token = process.env.GITHUB_AUTH_TOKEN;
-  const repositories = await getLatestRepos(userData, token);
+  // let token = process.env.GITHUB_AUTH_TOKEN;
+  // const repositories = await getLatestRepos(userData, token);
+  const repositories = [
+    {
+      name: "GetBetterAPI",
+      description:
+        "Backend server made for the Get-Better project on Express/Node.js",
+      url: "https://github.com/aaaaayushh/get-betterAPI",
+    },
+    {
+      name: "GetBetterUI",
+      description:
+        "Frontend application for the Get-Better project built using ReactJS",
+      url: "https://github.com/aaaaayushh/get-betterUI",
+    },
+    {
+      name: "Covid Tracker",
+      description:
+        "Covid Tracker application built using ReactJS and MaterialUI",
+      url: "https://github.com/aaaaayushh/covid-tracker",
+    },
+    {
+      name: "Portfolio",
+      description: "Code for portfolio website built using NextJS",
+      url: "https://github.com/aaaaayushh/portfolio",
+    },
+    {
+      name: "Spotify Clone",
+      description:
+        "Spotify clone built using ReactJS and Spotify developer API",
+      url: "https://github.com/aaaaayushh/spotify-clone",
+    },
+    {
+      name: "Mars Rover Manipal",
+      description:
+        "Website for the student project team Mars Rover Manipal built on ReactJS",
+      url: "https://github.com/aaaaayushh/mrm2021",
+    },
+  ];
   return {
     props: {
       repositories,

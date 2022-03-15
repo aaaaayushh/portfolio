@@ -15,7 +15,7 @@ export const userData = {
     title:
       "I'm a third-year Computer Science student and an avid software developer, eager to learn something new everyday",
     currentProject: "Get-Better",
-    currentProjectUrl: "",
+    currentProjectUrl: "https://github.com/aaaaayushh/get-betterUI",
   },
   projects: [
     {
@@ -26,6 +26,7 @@ export const userData = {
     {
       title: "Get-Better",
       imgUrl: "/projects/get-better.png",
+      link:"https://github.com/aaaaayushh/get-betterUI"
     },
     {
       title: "Mars Rover Manipal",
@@ -40,6 +41,7 @@ export const userData = {
     {
       title: "Portfolio",
       imgUrl: "/projects/portfolio.png",
+      link:"https://www.aayush-shah.com/"
     },
   ],
   experience: [
@@ -48,7 +50,7 @@ export const userData = {
       company: "eedge.ai",
       companyLink: "https://www.eedge.ai",
       year: "May 2021 - Present",
-      desc: "Contributed to the development of the product (an AI driven skill development platform).",
+      desc: "Contributed to the development of an AI driven skill development platform while working on both frontend and backend technologies like ReactJS, NextJS, Express, DynamoDB and MongoDB",
     },
     {
       title: "SDE Intern",
