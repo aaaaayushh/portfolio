@@ -56,7 +56,7 @@ export default function Contact() {
                 can.
               </p>
             </header>
-            <div className="icons-container inline-flex flex-col my-20">
+            <div className="icons-container inline-flex flex-col my-8 xl:my-20 w-full xl:w-8/12">
               <div className="flex flex-row items-center justify-between space-x-6 rounded-md border hover:border hover:border-blue-500 p-4 border-[#02044A]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ export default function Contact() {
                   }}
                 />
               </div>
-              <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
+              <div className="flex flex-row items-center justify-between space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -103,7 +103,7 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <div className="social-icons flex flex-row space-x-8">
+            <div className="social-icons flex flex-row space-x-8 justify-center xl:justify-start">
               <a
                 href={userData.socialLinks.github}
                 className="h-10 w-10 rounded-full text-white hover:bg-blue-500 flex items-center justify-center cursor-pointer transform scale-150"
