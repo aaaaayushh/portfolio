@@ -13,7 +13,7 @@ export const userData = {
   email: "aayushshah1142@gmail.com",
   about: {
     title:
-      "I'm a third-year Computer Science student and an avid software developer, eager to learn something new everyday",
+      "I'm a fourth-year Computer Science student and an avid software developer, eager to learn something new everyday",
     currentProject: "Get-Better",
     currentProjectUrl: "https://github.com/aaaaayushh/get-betterUI",
   },
