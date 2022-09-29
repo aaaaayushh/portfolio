@@ -138,12 +138,16 @@ export const Navbar: React.FC = () => {
           <a
             href={userData.socialLinks.github}
             className="text-base font-normal text-gray-600 dark:text-gray-300 transform scale-150"
+            rel="noreferrer"
+            target="_blank"
           >
             <FaGithub />
           </a>
           <a
             href={userData.socialLinks.twitter}
             className="text-base font-normal text-gray-600 dark:text-gray-300"
+            rel="noreferrer"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -159,6 +163,8 @@ export const Navbar: React.FC = () => {
           <a
             href={userData.socialLinks.linkedin}
             className="text-base font-normal text-gray-600 dark:text-gray-300"
+            rel="noreferrer"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

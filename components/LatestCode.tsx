@@ -58,8 +58,10 @@ const GithubRepoCard = ({ repo }) => {
         {repo.description}
       </p>
       <a
-        href={repo.clone_url}
+        href={repo.url}
         className="font-semibold group flex flex-row space-x-2 w-full items-center dark:text-gray-500"
+        target="_blank"
+        rel="noreferrer"
       >
         <p>View Repository</p>
         <div className="transform group-hover:translate-x-2 transition duration-300">

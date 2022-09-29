@@ -41,17 +41,22 @@ export default function experience() {
 
 function ExperienceCard({ title, desc, year, company, companyLink }) {
   return (
-    <div className="relative border p-4 rounded-md shadow-xl bg-white dark:bg-gray:800 z-10 mx-4">
-      <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-2xl xl:text-4xl text-gray-700 font-bold dark:text-gray-400">
+    <div className="relative border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
+      <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-2xl xl:text-4xl text-gray-700 font-bold dark:text-gray-100">
         {year}
       </h1>
-      <h1 className="font-semibold text-xl">{title}</h1>
+      <h1 className="font-semibold text-xl dark:text-gray-200">{title}</h1>
       {companyLink && (
-        <a href={companyLink} className="text-gray-500">
+        <a
+          href={companyLink}
+          target="_blank"
+          rel="noreferrer"
+          className="dark:text-gray-300"
+        >
           {company}
         </a>
       )}
-      <p className="text-gray-600 my-2">{desc}</p>
+      <p className="text-gray-400 my-2">{desc}</p>
     </div>
   );
 }

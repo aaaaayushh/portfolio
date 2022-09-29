@@ -31,6 +31,11 @@ export const getServerSideProps = async () => {
       url: "https://github.com/aaaaayushh/get-betterUI",
     },
     {
+      name: "Code Editor",
+      description: "An online code editor built using NextJS",
+      url: "https://github.com/aaaaayushh/code-editor",
+    },
+    {
       name: "Covid Tracker",
       description:
         "Covid Tracker application built using ReactJS and MaterialUI",
@@ -41,12 +46,7 @@ export const getServerSideProps = async () => {
       description: "Code for portfolio website built using NextJS",
       url: "https://github.com/aaaaayushh/portfolio",
     },
-    {
-      name: "Spotify Clone",
-      description:
-        "Spotify clone built using ReactJS and Spotify developer API",
-      url: "https://github.com/aaaaayushh/spotify-clone",
-    },
+
     {
       name: "Mars Rover Manipal",
       description:

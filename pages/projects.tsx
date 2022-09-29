@@ -21,6 +21,8 @@ export default function projects() {
                   <a
                     href={proj.link}
                     className="w-full px-8 xl:px-0 block shadow-2xl"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <div className="relative overflow-hidden">
                       <div className="h-72 object-cover">

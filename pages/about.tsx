@@ -20,10 +20,21 @@ export default function about() {
             >
               {userData.about.title}. Currently working on{" "}
               <a
-                href={userData.about.currentProjectUrl}
+                href={userData.about.currentProjectUrl1}
                 className="bg-red-500 rounded-md px-2 py-1 text-white"
+                target="_blank"
+                rel="noreferrer"
               >
-                {userData.about.currentProject}
+                {userData.about.currentProject1}
+              </a>{" "}
+              and{" "}
+              <a
+                href={userData.about.currentProjectUrl2}
+                className="bg-red-500 rounded-md px-2 py-1 text-white"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {userData.about.currentProject2}
               </a>
             </p>
           </div>
@@ -63,6 +74,8 @@ export default function about() {
                   <a
                     href={userData.socialLinks.twitter}
                     className="flex flex-row items-center space-x-4 group"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <div className="my-4">&rarr;</div>
                     <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -75,6 +88,8 @@ export default function about() {
                   <a
                     href={userData.socialLinks.github}
                     className="flex flex-row items-center space-x-4 group"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <div className="my-4">&rarr;</div>
                     <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -87,6 +102,8 @@ export default function about() {
                   <a
                     href={userData.socialLinks.linkedin}
                     className="flex flex-row items-center space-x-4 group"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <div className="my-4">&rarr;</div>
                     <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -99,6 +116,8 @@ export default function about() {
                   <a
                     href={userData.socialLinks.twitter}
                     className="flex flex-row items-center space-x-4 group"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <div className="my-4">&rarr;</div>
                     <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">

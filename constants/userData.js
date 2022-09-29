@@ -14,8 +14,10 @@ export const userData = {
   about: {
     title:
       "I'm a fourth-year Computer Science student and an avid software developer, eager to learn something new everyday",
-    currentProject: "Get-Better",
-    currentProjectUrl: "https://github.com/aaaaayushh/get-betterUI",
+    currentProject1: "Get-Better",
+    currentProjectUrl1: "https://github.com/aaaaayushh/get-betterUI",
+    currentProject2: "Code Editor",
+    currentProjectUrl2: "https://github.com/aaaaayushh/code-editor",
   },
   projects: [
     {
@@ -24,9 +26,14 @@ export const userData = {
       link: "https://www.eedge.ai",
     },
     {
+      title: "Code Editor",
+      imgUrl: "/projects/code-editor.png",
+      link: "https://gentle-ganache-d3a2ae.netlify.app/",
+    },
+    {
       title: "Get-Better",
       imgUrl: "/projects/get-better.png",
-      link:"https://github.com/aaaaayushh/get-betterUI"
+      link: "https://fabulous-cactus-b629a1.netlify.app/",
     },
     {
       title: "Mars Rover Manipal",
@@ -41,7 +48,7 @@ export const userData = {
     {
       title: "Portfolio",
       imgUrl: "/projects/portfolio.png",
-      link:"https://www.aayush-shah.com/"
+      link: "https://www.aayush-shah.com/",
     },
   ],
   experience: [

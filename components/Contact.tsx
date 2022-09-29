@@ -107,12 +107,16 @@ export default function Contact() {
               <a
                 href={userData.socialLinks.github}
                 className="h-10 w-10 rounded-full text-white hover:bg-blue-500 flex items-center justify-center cursor-pointer transform scale-150"
+                target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub />
               </a>
               <a
                 href={userData.socialLinks.twitter}
                 className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <svg
                   width="24"
@@ -133,6 +137,8 @@ export default function Contact() {
               <a
                 href={userData.socialLinks.linkedin}
                 className="h-10 w-10 rounded-full text-white hover:bg-blue-500 flex items-center justify-center cursor-pointer transform scale-150"
+                target="_blank"
+                rel="noreferrer"
               >
                 <GrLinkedin />
               </a>
