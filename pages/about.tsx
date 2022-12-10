@@ -130,7 +130,7 @@ export default function about() {
             </div>
             <div className="col-span-1 md:col-span-2">
               <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
-                I&apos;m a third-year undergraduate student currently pursuing
+                I&apos;m a fourth-year undergraduate student currently pursuing
                 my B.Tech from Manipal Institute of Technology. My first
                 encounter with developing websites was when I was a mere 15
                 years old. I started with rudimentary HTML and CSS static pages,
