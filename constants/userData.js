@@ -6,6 +6,7 @@ export const userData = {
     twitter: "https://twitter.com/aaaaayushh",
     linkedin: "https://www.linkedin.com/in/aayush-shah-35591319a/",
     github: "https://www.github.com/aaaaayushh",
+    blog: "https://aaaaayushh.hashnode.dev/",
   },
   githubUsername: "aaaaayushh",
   projects: [],
@@ -56,7 +57,7 @@ export const userData = {
       title: "SDE Intern",
       company: "eedge.ai",
       companyLink: "https://www.eedge.ai",
-      year: "May 2021 - Present",
+      year: "May 2021 - August 2022",
       desc: "Contributed to the development of an AI driven skill development platform while working on both frontend and backend technologies like ReactJS, NextJS, Express, DynamoDB and MongoDB",
     },
     {
