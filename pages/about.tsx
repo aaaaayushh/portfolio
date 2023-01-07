@@ -59,11 +59,12 @@ export default function about() {
               </div>
               <div className="mt-8">
                 <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                  Internship Opportunities
+                  Full-time Opportunities
                 </h1>
                 <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                  I&apos;m looking for a software development internships
-                  currently. If you see me as a good fit, please reach out.
+                  I&apos;m looking for software development roles with a start
+                  date in July 2023 currently. If you see me as a good fit,
+                  please reach out.
                 </p>
               </div>
               <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">

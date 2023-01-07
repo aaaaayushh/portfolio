@@ -1,6 +1,6 @@
 export const userData = {
   name: "Aayush Shah",
-  designation: "Full stack developer",
+  designation: "Full Stack Developer",
   socialLinks: {
     instagram: "https://www.instagram.com/aaaaayushh/",
     twitter: "https://twitter.com/aaaaayushh",
@@ -53,6 +53,13 @@ export const userData = {
     },
   ],
   experience: [
+    {
+      title: "SDE Intern",
+      company: "nurture.farm",
+      companyLink: "https://nurture.farm",
+      year: "January 2023 - Present",
+      desc: "Stay tuned for some amazing updates in this space!",
+    },
     {
       title: "SDE Intern",
       company: "eedge.ai",
